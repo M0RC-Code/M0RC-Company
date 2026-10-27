@@ -13,13 +13,21 @@ button {
 
 /* Container - Home */
 .container-home {
-    color: #fff;
+    width: 1200px;
+    margin: 0 auto;
 }
 .contents {
-
+    height: 400px;
+    color: #fff;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 1px #fff;
 }
 .contents-tags {
-
+    display: flex;
 }
 .tag-1 {
 
@@ -31,19 +39,33 @@ button {
 
 }
 .tags {
-
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 12px;
 }
 .contents-title {
-
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 .contents-title-black {
-
+    color: gray;
+    text-shadow: 0px 0px 1px #fff;
 }
 .contents-caption {
-
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+    width: 50%;
+    word-spacing: 2px;
 }
 .contents-btns {
-
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
 }
 .btns-left {
 
@@ -51,6 +73,20 @@ button {
 .btns-right {
 
 }
+.btns {
+    width: 200px;
+    height: 50px;
+    font-size: 1rem;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    box-shadow: 0px 0px 2px #fff;
+}
 .image-bg-img {
-    
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
 }

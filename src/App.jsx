@@ -22,12 +22,12 @@ function App() {
             for forward-thinking businesses.
           </div>
           <div className="contents-btns">
-            <button className="btns-left">Our Services</button>
-            <button className="btns-right">View Portfolio</button>
+            <button className="btns-left btns">Our Services</button>
+            <button className="btns-right btns">View Portfolio</button>
           </div>
-        </div>
-        <div className="image-bg">
-          <img src="../src/assets/images/header.jpg" alt="bg image" className="image-bg-img"/>
+          <div className="image-bg">
+            <img src="../src/assets/images/header.jpg" alt="bg image" className="image-bg-img"/>
+          </div>
         </div>
       </div>
     </>

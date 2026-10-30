@@ -11,13 +11,6 @@ function App() {
       {/* Home Container Components */}
       <div className="container-home">
         <Header />
-        <div className="cards">
-          <div className="card">
-            <img src="#" alt="#" className='card-image'/>
-            <span className="card-title">title</span>
-            <span className="card-content"></span>
-          </div>
-        </div>
       </div>
     </>
   )

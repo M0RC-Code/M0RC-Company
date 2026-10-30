@@ -18,16 +18,20 @@ function App() {
         <About />
         <Services />
         <footer className='container-footer'>
-          <span className="footer-title">M0RC</span>
           <div className="footer-menu">
-            <a href="#" className='menu-home menu-btns'>Home</a>
-            <a href="#" className='menu-about menu-btns'>About</a>
-            <a href="#" className='menu-services menu-btns'>Services</a>
-            <a href="#" className='menu-portofolio menu-btns'>Portofolio</a>
-            <a href="#" className='menu-blog menu-btns'>Blog</a>
-            <a href="#" className='menu-contect menu-btns'>Contect</a>
+            <span className="footer-title">M0RC</span>
+            <div className="menu-options">
+              <a href="#" className='menu-home menu-btns'>Home</a>
+              <a href="#" className='menu-about menu-btns'>About</a>
+              <a href="#" className='menu-services menu-btns'>Services</a>
+              <a href="#" className='menu-portofolio menu-btns'>Portofolio</a>
+              <a href="#" className='menu-blog menu-btns'>Blog</a>
+              <a href="#" className='menu-contect menu-btns'>Contect</a>
+            </div>
           </div>
-          <span className='footer-description'></span>
+          <span className='footer-description'>Build digital experiences
+            for a better tomorrow.
+          </span>
           <div className="footer-social">
             <a href="#" className='social-linkdin socials'><FaLinkedin /></a>
             <a href="#" className='social-instagram socials'><FaInstagram /></a>

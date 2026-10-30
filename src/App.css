@@ -30,13 +30,20 @@ a {
 .container-footer {
     color: #fff;
 }
-.footer-title {
-
-}
 .footer-menu {
-
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.footer-title {
+    font-size: 2rem;
 }
 /* Footer - Menu */
+.menu-options {
+    
+}
 .menu-btns {
 
 }

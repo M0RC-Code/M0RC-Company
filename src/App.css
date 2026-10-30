@@ -12,7 +12,26 @@ button {
 }
 
 /* Container - Home */
-.container-home {
+.container {
     width: 1200px;
     margin: 0 auto;
+}
+/* Style - About */
+.container-about {
+    color: #fff;
+}
+.about-title {
+
+}
+.about-content {
+
+}
+.about-description {
+
+}
+.about-btn {
+
+}
+.about-image {
+
 }

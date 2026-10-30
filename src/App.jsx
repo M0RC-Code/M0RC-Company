@@ -4,7 +4,7 @@ import Header from "./Components/home/Header.jsx";
 import About from "./Components/About.jsx";
 import Services from "./Components/Services.jsx";
 
-import { FaLinkedin, FaInstagram, FaTelegram, FaYoutube } from "react-icons/fa";
+import { FaLinkedin, FaInstagram, FaTelegram, FaYoutube, FaGithub} from "react-icons/fa";
 
 function App() {
 
@@ -34,9 +34,10 @@ function App() {
           </span>
           <div className="footer-social">
             <a href="#" className='social-linkdin socials'><FaLinkedin /></a>
-            <a href="#" className='social-instagram socials'><FaInstagram /></a>
-            <a href="#" className='social-telegram socials'><FaTelegram /></a>
-            <a href="#" className='social-youtube socials'><FaYoutube /></a>
+            <a href="https://www.instagram.com/m0rc_dev?dlrf=MXJ2azk2dG91MHVsMw==" className='social-instagram socials'><FaInstagram /></a>
+            <a href="https://t.me/M0RC_Dev" className='social-telegram socials'><FaTelegram /></a>
+            <a href="https://youtube.com/@m0rc-code?si=WHsVzdEY-kV-jEy2" className='social-youtube socials'><FaYoutube /></a>
+            <a href="https://github.com/M0RC-Code" className='social-github socials'><FaGithub /></a>
           </div>
         </footer>
       </div>

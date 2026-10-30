@@ -45,7 +45,7 @@ a {
     
 }
 .menu-btns {
-
+    opacity: 90%;
 }
 .menu-home {
 
@@ -88,4 +88,7 @@ a {
 }
 .social-youtube {
 
+}
+.social-github {
+    
 }

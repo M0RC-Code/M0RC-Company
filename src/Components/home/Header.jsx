@@ -20,9 +20,6 @@ const Header = () => {
             <button className="btns-left btns">Our Services</button>
             <button className="btns-right btns">View Portfolio</button>
           </div>
-          <div className="image-bg">
-            <img src="../src/assets/images/header.jpg" alt="bg image" className="image-bg-img"/>
-          </div>
         </div>
     )
 }

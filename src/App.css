@@ -19,6 +19,7 @@ button {
 /* Style - About */
 .container-about {
     color: #fff;
+    position: relative;
 }
 .about-title {
 

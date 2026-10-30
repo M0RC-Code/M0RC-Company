@@ -1,4 +1,5 @@
 import "../Styles/About.css"
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const About = () => {
     return(
@@ -11,7 +12,7 @@ const About = () => {
               on quality, innovation and user sxperience, we turn your ideas
               into real, functional and beautiful products.
             </span>
-            <button className='about-btn'>Learn More --</button>
+            <button className='about-btn'>Learn More <AiOutlineArrowRight /></button>
           </div>
           <img src="../src/assets/images/about-image.jpg" alt="image!" className='about-image'/>
         </div>

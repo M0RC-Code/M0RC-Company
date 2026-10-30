@@ -29,12 +29,15 @@
 .about-btn {
     position: absolute;
     bottom: 20px;
-    display: block;
+    display: flex;
     margin-top: 10px;
     width: 200px;
     height: 30px;
     border-radius: 10px;
     font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 .about-image {
     position: absolute;

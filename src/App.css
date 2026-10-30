@@ -16,6 +16,9 @@ body {
 button {
     border: unset;
 }
+a {
+    all: unset;
+}
 
 /* Container - Home */
 .container {
@@ -25,7 +28,7 @@ button {
 
 /* Style - Footer */
 .container-footer {
-
+    color: #fff;
 }
 .footer-title {
 
@@ -77,5 +80,5 @@ button {
 
 }
 .social-youtube {
-    
+
 }

@@ -2,11 +2,9 @@ import './App.css'
 import Menu from "./Components/Menu.jsx";
 import Header from "./Components/home/Header.jsx";
 import About from "./Components/About.jsx";
+import Services from "./Components/Services.jsx";
 
-import { SiDevbox } from "react-icons/si";
-import { FaQuidditch, FaComments } from "react-icons/fa";
-import { IoIosPricetag } from "react-icons/io";
-import { AiOutlineArrowRight } from "react-icons/ai";
+import { FaLinkedin, FaInstagram, FaTelegram, FaYoutube } from "react-icons/fa";
 
 function App() {
 
@@ -18,47 +16,25 @@ function App() {
       <div className="container">
         <Header />
         <About />
-        <div className="container-services">
-          <span className="service-intro">Our Services</span>
-          <div className="service-header">
-            <h2 className='service-title'>What We Do</h2>
-            <button className='service-btn'>View All Services <AiOutlineArrowRight /></button>
+        <Services />
+        <footer className='container-footer'>
+          <span className="footer-title">M0RC</span>
+          <div className="footer-menu">
+            <a href="#" className='menu-home menu-btns'>Home</a>
+            <a href="#" className='menu-about menu-btns'>About</a>
+            <a href="#" className='menu-services menu-btns'>Services</a>
+            <a href="#" className='menu-portofolio menu-btns'>Portofolio</a>
+            <a href="#" className='menu-blog menu-btns'>Blog</a>
+            <a href="#" className='menu-contect menu-btns'>Contect</a>
           </div>
-          <div className="cards">
-            <div className="card">
-              <div className="card-icons"><SiDevbox /></div>
-              <h3 className="card-title">Web Development</h3>
-              <span className='card-description'>Modern, fast and scaiable
-                web applications tailored 
-                to your needs.
-              </span>
-            </div>            
-            <div className="card">
-              <div className="card-icons"><FaQuidditch /></div>
-              <h3 className="card-title">UI/UX Design</h3>
-              <span className='card-description'>User-centered designs
-                that create real
-                engagment.
-              </span>
-            </div>
-            <div className="card">
-              <div className="card-icons"><IoIosPricetag /></div>
-              <h3 className="card-title">Branding</h3>
-              <span className='card-description'>Build a strong Brand 
-                identility that makes you
-                stand out.
-              </span>
-            </div>
-            <div className="card">
-              <div className="card-icons"><FaComments /></div>
-              <h3 className="card-title">Consulting</h3>
-              <span className='card-description'>Strategic advice to help
-                you grow and succeed
-                in the digital world.
-              </span>
-            </div>
+          <span className='footer-description'></span>
+          <div className="footer-social">
+            <a href="#" className='social-linkdin socials'><FaLinkedin /></a>
+            <a href="#" className='social-instagram socials'><FaInstagram /></a>
+            <a href="#" className='social-telegram socials'><FaTelegram /></a>
+            <a href="#" className='social-youtube socials'><FaYoutube /></a>
           </div>
-        </div>
+        </footer>
       </div>
     </>
   )

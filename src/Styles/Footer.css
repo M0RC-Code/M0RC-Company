@@ -1,0 +1,80 @@
+/* Style - Footer */
+.container-footer {
+    color: #fff;
+    box-shadow: 0px 0xp 1px #fff;
+}
+.footer-menu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-title {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+/* Footer - Menu */
+.footer-menu-options {
+    display: flex;
+    width: 50%;
+    /* flex-wrap: wrap; */
+}
+.menu-btns {
+    opacity: 90%;
+    font-size: 0.9rem;
+    flex: 1;
+}
+.menu-home {
+
+}
+.menu-about {
+
+}
+.menu-services {
+
+}
+.menu-portoflio {
+
+}
+.menu-blog {
+
+}
+.menu-contect {
+
+}
+
+/* Footer - Decription */
+.footer-description {
+    width: 200px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+/* Decription - Socials */
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+.socials {
+    font-size: 2rem;
+    margin-top: 15px;
+}
+.social-linkdin {
+
+}
+.social-instagram {
+
+}
+.social-telegram {
+
+}
+.social-youtube {
+
+}
+.social-github {
+
+}
+
+.footer-copyright {
+    text-align: center;
+    opacity: 70%;
+}

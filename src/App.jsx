@@ -17,27 +17,38 @@ function App() {
         <Header />
         <About />
         <Services />
-        <footer className='container-footer'>
+        <footer className="container-footer">
           <div className="footer-menu">
             <span className="footer-title">M0RC</span>
-            <div className="menu-options">
-              <a href="#" className='menu-home menu-btns'>Home</a>
-              <a href="#" className='menu-about menu-btns'>About</a>
-              <a href="#" className='menu-services menu-btns'>Services</a>
-              <a href="#" className='menu-portofolio menu-btns'>Portofolio</a>
-              <a href="#" className='menu-blog menu-btns'>Blog</a>
-              <a href="#" className='menu-contect menu-btns'>Contect</a>
+
+            <nav className="menu-options">
+              <a href="#home" className="menu-btns">Home</a>
+              <a href="#about" className="menu-btns">About</a>
+              <a href="#services" className="menu-btns">Services</a>
+              <a href="#portfolio" className="menu-btns">Portfolio</a>
+              <a href="#blog" className="menu-btns">Blog</a>
+              <a href="#contact" className="menu-btns">Contact</a>
+            </nav>
+          </div>
+
+          <div className="footer-bottom">
+            <span className="footer-description">
+              Build digital experiences
+              <br />
+              for a better tomorrow.
+            </span>
+
+            <div className="footer-social">
+              <a href="#" aria-label="LinkedIn" className="socials"><FaLinkedin /></a>
+              <a href="https://www.instagram.com/m0rc_dev" aria-label="Instagram" className="socials"><FaInstagram /></a>
+              <a href="https://t.me/M0RC_Dev" aria-label="Telegram" className="socials"><FaTelegram /></a>
+              <a href="https://youtube.com/@m0rc-code" aria-label="YouTube" className="socials"><FaYoutube /></a>
+              <a href="https://github.com/M0RC-Code" aria-label="GitHub" className="socials"><FaGithub /></a>
             </div>
           </div>
-          <span className='footer-description'>Build digital experiences
-            for a better tomorrow.
-          </span>
-          <div className="footer-social">
-            <a href="#" className='social-linkdin socials'><FaLinkedin /></a>
-            <a href="https://www.instagram.com/m0rc_dev?dlrf=MXJ2azk2dG91MHVsMw==" className='social-instagram socials'><FaInstagram /></a>
-            <a href="https://t.me/M0RC_Dev" className='social-telegram socials'><FaTelegram /></a>
-            <a href="https://youtube.com/@m0rc-code?si=WHsVzdEY-kV-jEy2" className='social-youtube socials'><FaYoutube /></a>
-            <a href="https://github.com/M0RC-Code" className='social-github socials'><FaGithub /></a>
+
+          <div className="footer-copyright">
+            © {new Date().getFullYear()} M0RC. All rights reserved.
           </div>
         </footer>
       </div>

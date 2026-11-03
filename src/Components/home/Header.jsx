@@ -9,7 +9,7 @@ const Header = () => {
             <div className="tag-3 tags">Technology</div>
           </div>
           <div className="contents-title">
-            We Build Digital Experinces That <span className="contents-title-black">Matter</span>
+            We Build Digital Experiences That <span className="contents-title-black">Matter</span>
           </div>
           <div className="contents-caption">
             M0RC is a modern digital studio focused on creating

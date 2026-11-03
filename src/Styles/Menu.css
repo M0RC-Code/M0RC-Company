@@ -9,6 +9,7 @@
     align-items: center;
     background-color: #0A0A0A;
     border-radius: 12px;
+    position: relative;
 }
 .menu-brand {
 
@@ -27,24 +28,6 @@
     font-weight: bold;
     font-size: 1rem;
 }
-.options-home {
-
-}
-.options-about {
-
-}
-.options-services {
-  
-}
-.options-portofolio {
-
-}
-.options-blog {
-
-}
-.options-contect {
-
-}
 .options {
     background-color: #111111;
     color: #FFFFFF;
@@ -62,4 +45,93 @@
     background-color: #111111;
     font-weight: bold;
     font-size: 1.1rem;
+}
+
+/* Hamburger button - hidden on desktop by default */
+.menu-hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 20;
+}
+.menu-hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+/* Turn hamburger into an X when open */
+.menu-hamburger .bar.open:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.menu-hamburger .bar.open:nth-child(2) {
+    opacity: 0;
+}
+.menu-hamburger .bar.open:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ===== Responsive: Tablet ===== */
+@media (max-width: 992px) {
+    .menu-options {
+        width: auto;
+        gap: 10px;
+    }
+    .options {
+        font-size: 0.85rem;
+        padding: 6px 8px;
+    }
+    .menu-touch-btn {
+        width: 150px;
+    }
+}
+
+/* ===== Responsive: Mobile ===== */
+@media (max-width: 768px) {
+    .menu {
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .menu-hamburger {
+        display: flex;
+    }
+
+    .menu-options {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 0;
+        order: 3;
+    }
+    .menu-options.active {
+        display: flex;
+    }
+    .menu-options .options {
+        width: 100%;
+        padding: 12px;
+        border-radius: 0;
+        text-align: left;
+    }
+
+    .menu-touch {
+        display: none;
+        width: 100%;
+        order: 4;
+    }
+    .menu-touch.active {
+        display: block;
+    }
+    .menu-touch-btn {
+        width: 100%;
+        margin-top: 8px;
+    }
 }

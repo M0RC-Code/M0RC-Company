@@ -10,17 +10,24 @@
     background-color: #0A0A0A;
     border-radius: 12px;
     position: relative;
+    animation: fadeInDown 0.6s ease forwards;
 }
 .menu-brand {
 
 }
 .brand-text {
     color: #FFFFFF;
+    transition: letter-spacing 0.3s ease, opacity 0.3s ease;
+    cursor: default;
+}
+.brand-text:hover {
+    letter-spacing: 1px;
+    opacity: 0.8;
 }
 
 .menu-options {
     display: flex;
-    width: 200px;
+    width: 500px;
     height: 30px;
     border-radius: 10px;
     align-items: center;
@@ -31,6 +38,32 @@
 .options {
     background-color: #111111;
     color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    padding: 6px 10px;
+    border-radius: 6px;
+    position: relative;
+    transition: color 0.3s ease, transform 0.25s ease;
+    overflow: hidden;
+}
+/* Underline that grows from center on hover */
+.options::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 2px;
+    width: 0%;
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+.options:hover {
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
+.options:hover::after {
+    width: 70%;
+    left: 15%;
 }
 
 .menu-touch {
@@ -45,6 +78,17 @@
     background-color: #111111;
     font-weight: bold;
     font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+.menu-touch-btn:hover {
+    background-color: #FFFFFF;
+    color: #0A0A0A;
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 18px rgba(255,255,255,0.2);
+}
+.menu-touch-btn:active {
+    transform: translateY(-1px) scale(0.98);
 }
 
 /* Hamburger button - hidden on desktop by default */
@@ -59,6 +103,10 @@
     border: none;
     cursor: pointer;
     z-index: 20;
+    transition: transform 0.3s ease;
+}
+.menu-hamburger:hover {
+    transform: scale(1.1);
 }
 .menu-hamburger .bar {
     width: 25px;
@@ -76,6 +124,29 @@
 }
 .menu-hamburger .bar.open:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
+}
+
+/* ===== Animations ===== */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ===== Responsive: Tablet ===== */
@@ -117,9 +188,25 @@
     }
     .menu-options .options {
         width: 100%;
-        padding: 12px;
-        border-radius: 0;
+        padding: 12px;border-radius: 0;
         text-align: left;
+        animation: slideDown 0.35s ease forwards;
+        opacity: 0;
+    }
+    /* Stagger each option as the mobile menu opens */
+    .menu-options .options:nth-child(1) { animation-delay: 0.05s; }
+    .menu-options .options:nth-child(2) { animation-delay: 0.1s; }
+    .menu-options .options:nth-child(3) { animation-delay: 0.15s; }
+    .menu-options .options:nth-child(4) { animation-delay: 0.2s; }
+    .menu-options .options:nth-child(5) { animation-delay: 0.25s; }
+    .menu-options .options:nth-child(6) { animation-delay: 0.3s; }
+
+    .menu-options .options::after {
+        display: none; /* underline hover effect doesn't fit full-width mobile rows */
+    }
+    .menu-options .options:hover {
+        background-color: #1a1a1a;
+        transform: none;
     }
 
     .menu-touch {
@@ -129,6 +216,8 @@
     }
     .menu-touch.active {
         display: block;
+        animation: slideDown 0.35s ease 0.35s forwards;
+        opacity: 0;
     }
     .menu-touch-btn {
         width: 100%;

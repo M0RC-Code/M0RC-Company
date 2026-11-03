@@ -1,80 +1,181 @@
 /* Style - Footer */
 .container-footer {
     color: #fff;
-    box-shadow: 0px 0xp 1px #fff;
+    padding: 30px 10px 15px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    animation: fadeInUp 0.7s ease forwards;
+    opacity: 0;
 }
+
 .footer-menu {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 .footer-title {
     font-size: 2rem;
     margin-bottom: 15px;
+    font-weight: bold;
+    transition: letter-spacing 0.3s ease, opacity 0.3s ease;
+    cursor: default;
 }
+.footer-title:hover {
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
 /* Footer - Menu */
 .footer-menu-options {
     display: flex;
     width: 50%;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
+    gap: 5px;
 }
 .menu-btns {
     opacity: 90%;
     font-size: 0.9rem;
     flex: 1;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    padding: 4px 0;
+    width: fit-content;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.menu-home {
-
+/* Underline grows on hover */
+.menu-btns::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
 }
-.menu-about {
-
+.menu-btns:hover {
+    opacity: 1;
+    transform: translateY(-2px);
 }
-.menu-services {
-
-}
-.menu-portoflio {
-
-}
-.menu-blog {
-
-}
-.menu-contect {
-
+.menu-btns:hover::after {
+    width: 100%;
 }
 
-/* Footer - Decription */
+/* Footer - Bottom */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+/* Footer - Description */
 .footer-description {
     width: 200px;
     font-size: 1rem;
     font-weight: 500;
+    opacity: 0.85;
+    line-height: 1.5;
 }
-/* Decription - Socials */
+
+/* Description - Socials */
 .footer-social {
     display: flex;
-    gap: 10px;
+    gap: 14px;
 }
 .socials {
-    font-size: 2rem;
-    margin-top: 15px;
+    font-size: 1.6rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.08);
+    transition: transform 0.35s ease, background-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
 }
-.social-linkdin {
-
-}
-.social-instagram {
-
-}
-.social-telegram {
-
-}
-.social-youtube {
-
-}
-.social-github {
-
+.socials:hover {
+    transform: translateY(-5px) rotate(8deg) scale(1.1);
+    background-color: #fff;
+    color: #0A0A0A;
+    box-shadow: 0 8px 18px rgba(255,255,255,0.25);
 }
 
 .footer-copyright {
     text-align: center;
     opacity: 70%;
+    margin-top: 25px;
+    font-size: 0.85rem;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ===== Animation ===== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== Responsive: Tablet ===== */
+@media (max-width: 992px) {
+    .footer-menu-options {
+        width: 65%;
+    }
+    .footer-description {
+        width: 180px;
+    }
+}
+
+/* ===== Responsive: Mobile ===== */
+@media (max-width: 768px) {
+    .footer-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .footer-menu-options {
+        width: 100%;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .menu-btns {
+        width: 100%;
+        flex: none;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .footer-description {
+        width: 100%;
+    }
+    .socials {
+        font-size: 1.4rem;
+        width: 38px;
+        height: 38px;
+    }
+}
+
+/* ===== Responsive: Small Mobile ===== */
+@media (max-width: 480px) {
+    .footer-title {
+        font-size: 1.6rem;
+    }
+    .footer-social {
+        gap: 10px;
+    }
 }

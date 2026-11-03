@@ -16,6 +16,7 @@
     width: 50%;
     z-index: 2;
     animation: fadeInUp 0.8s ease forwards;
+    height: 100%;
 }
 
 .about-title {
@@ -42,6 +43,7 @@
 .about-btn {
     position: absolute;
     bottom: 20px;
+    left: 10px;
     display: flex;
     margin-top: 10px;
     width: 200px;

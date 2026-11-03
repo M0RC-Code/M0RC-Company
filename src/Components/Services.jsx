@@ -5,7 +5,7 @@ import { FaQuidditch, FaComments } from "react-icons/fa";
 import { IoIosPricetag } from "react-icons/io";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
-const Sevices = () => {
+const Services = () => {
     return(
         <div className="container-services">
           <span className="service-intro">Our Services</span>
@@ -14,31 +14,31 @@ const Sevices = () => {
             <button className='service-btn'>View All Services <AiOutlineArrowRight /></button>
           </div>
           <div className="cards">
-            <div className="card">
+            <div className="card" style={{ "--delay": "0s" }}>
               <div className="card-icons"><SiDevbox /></div>
               <h3 className="card-title">Web Development</h3>
-              <span className='card-description'>Modern, fast and scaiable
-                web applications tailored 
+              <span className='card-description'>Modern, fast and scalable
+                web applications tailored
                 to your needs.
               </span>
-            </div>            
-            <div className="card">
+            </div>
+            <div className="card" style={{ "--delay": "0.1s" }}>
               <div className="card-icons"><FaQuidditch /></div>
               <h3 className="card-title">UI/UX Design</h3>
               <span className='card-description'>User-centered designs
                 that create real
-                engagment.
+                engagement.
               </span>
             </div>
-            <div className="card">
+            <div className="card" style={{ "--delay": "0.2s" }}>
               <div className="card-icons"><IoIosPricetag /></div>
               <h3 className="card-title">Branding</h3>
-              <span className='card-description'>Build a strong Brand 
-                identility that makes you
+              <span className='card-description'>Build a strong Brand
+                identity that makes you
                 stand out.
               </span>
             </div>
-            <div className="card">
+            <div className="card" style={{ "--delay": "0.3s" }}>
               <div className="card-icons"><FaComments /></div>
               <h3 className="card-title">Consulting</h3>
               <span className='card-description'>Strategic advice to help
@@ -51,4 +51,4 @@ const Sevices = () => {
     )
 }
 
-export default Sevices;
+export default Services;
